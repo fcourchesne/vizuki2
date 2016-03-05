@@ -117,11 +117,12 @@ hi EasyMotionTarget2Second 	guifg=#DF0000 									ctermfg=160 					ctermbg=none
 hi TabLineFill 		guifg=#222222 	guibg=#222222 							ctermfg=232						ctermbg=none
 hi TabLine 			guifg=#666666 	guibg=#222222 		gui=none 			ctermfg=245
 
-hi goLabel       	guifg=#565687 gui=bold ctermfg=238 cterm=bold
-"hi goLabel       	guifg=#565687 gui=bold ctermfg=197 cterm=bold
-"hi goStatement 	guifg=#AF0000 gui=bold ctermfg=196 cterm=bold
-hi goStatement 	guifg=#AF0000 gui=bold ctermfg=124 cterm=bold
-
+hi rustDeriveTrait      guifg=#B01E1E ctermfg=88
+hi rustDerive           guifg=#F61616 ctermfg=124
+hi rustAttribute        guifg=#F61616 ctermfg=124
+hi rustOperator         guifg=#8A8A8A ctermfg=245
+hi Lifetime             guifg=#FF5500 ctermfg=196
+hi CommentDoc           guifg=#2A8EB8 ctermfg=24
 hi link rustConditional Statement
 hi link rustKeyword     Statement
 hi link rustMacro       Function
@@ -130,13 +131,11 @@ hi link rustTrait       Type
 hi link rustLifetimeCandidate   Lifetime
 hi link rustLifetime            Lifetime
 hi link rustCommentLineDoc CommentDoc
-hi rustDeriveTrait      ctermfg=88
-hi rustDerive           ctermfg=124
-hi rustAttribute        ctermfg=124
-hi rustOperator         ctermfg=245
-hi Lifetime             ctermfg=196
-hi CommentDoc           ctermfg=24
 
+hi goLabel       	guifg=#565687 gui=bold ctermfg=238 cterm=bold
+"hi goLabel       	guifg=#565687 gui=bold ctermfg=197 cterm=bold
+"hi goStatement 	guifg=#AF0000 gui=bold ctermfg=196 cterm=bold
+hi goStatement 	guifg=#AF0000 gui=bold ctermfg=124 cterm=bold
 hi link goDeclType 		Statement
 hi link goType 			Type
 hi link goBoolean       Type
