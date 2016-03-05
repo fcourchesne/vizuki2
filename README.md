@@ -13,7 +13,7 @@ A vim colorscheme with a grey background easy on the eyes
 Coloring confirmed compatible with:
 - [Airline](https://github.com/vim-airline/vim-airline)
 - [Rust](https://github.com/rust-lang/rust.vim)
-- [GO](https://github.com/fatih/vim-go)
+- [Go](https://github.com/fatih/vim-go)
 - [GitGutter](https://github.com/airblade/vim-gitgutter)
 - Diff
 - Python
