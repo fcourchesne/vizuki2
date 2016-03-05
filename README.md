@@ -3,9 +3,11 @@ A vim colorscheme with a grey background easy on the eyes
 
 ##Screenshots
 ### Vim:
-![Vim coloring](sshot_terminal.png "Vim coloring")
+![Vim coloring](sshot_vim_rust.png "Vim coloring - Rust language")
+![Vim coloring](sshot_vim_go.png "Vim coloring - Go language")
 ### Gvim:
-![GVim coloring](sshot_gvim.png "GVim coloring")
+![GVim coloring](sshot_gvim_rust.png "GVim coloring - Rust language")
+![GVim coloring](sshot_gvim_go.png "GVim coloring - Go language")
 ### Diff:
 ... to be added
 
