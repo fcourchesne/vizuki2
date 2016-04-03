@@ -77,7 +77,7 @@ hi Conditional 		guifg=#006633 						gui=bold			ctermfg=22 						cterm=bold
 
 hi Delimiter 		guifg=Black 											ctermfg=232
 hi PreProc 			guifg=#006633 											ctermfg=22
-hi Special 			guifg=#006633 											ctermfg=22
+hi Special guifg=#C71F1F guifg=bold ctermfg=88 cterm=bold
 hi Keyword 			guifg=#375CF5 											ctermfg=26
 hi SpellBad 		                                                        ctermfg=15      ctermbg=160
 hi SpellCap 						guibg=#375CF5										 	ctermbg=63
@@ -163,7 +163,7 @@ hi link Float           Number
 hi link Repeat          Conditional
 hi link Label           Statement
 hi link Exception       Statement
-hi link Include         Normal
+hi link Include         Special
 hi link Define          PreProc
 hi link Macro           PreProc
 hi link PreCondit       PreProc
