@@ -43,30 +43,31 @@ hi Title         	guifg=#FF5400 	guibg=#D6D6D6 		gui=none 			ctermfg=202 	ctermb
 hi Cursor        	guifg=#FFFFFF 	guibg=#A640E2       gui=none 	ctermfg=92 ctermbg=255	                term=reverse
 " hi CursorLine 						guibg=#EAEAEA 		gui=none 			ctermbg=none 	ctermbg=254 	cterm=none
 "hi CursorLine 						                    gui=none 			                                cterm=none
-hi CursorLine 		guibg=#D6D6D6				                    gui=none 			                                cterm=none
+hi CursorLine 		guibg=#DEDEDE				                    gui=none 			    ctermbg=253  cterm=none
 hi LineNr        	guifg=#BEBCBC 	ctermfg=249
 hi CursorLineNr    	guifg=#A5A5A5 	ctermfg=249 					cterm=bold
 hi Visual 							guibg=#B1CAE3 		gui=none 			ctermfg=none	ctermbg=153
 hi NonText 			guifg=#FBFBFB 	guibg=#D6D6D6 	 	gui=none 			ctermfg=253
 "hi StatusLine 		guifg=Black 	guibg=#D6D6D6 		gui=none 			ctermfg=232
-hi StatusLine 		ctermbg=160
+hi StatusLine 		guibg=#8E8E8E guifg=#EFEFEF ctermbg=241 ctermfg=255
 hi StatusLineNC 	guifg=#666666 	guibg=#D6D6D6 		gui=none 			ctermfg=245
 
 hi VertSplit 		guifg=#A0A0A0 	guibg=#C7C7C7		gui=none 			ctermfg=251     ctermbg=242
 hi ModeMsg 			guifg=#FBFBFB 	guibg=#FF5400 		gui=none 			ctermfg=253 	ctermbg=202
 hi ErrorMsg 		guifg=#FFFFFF 	guibg=#FF0009 		gui=bold 			ctermfg=255 	ctermbg=160
 "hi Error         	guifg=#FF0009 	guibg=#D6D6D6		gui=bold 			ctermfg=160		ctermbg=none	cterm=bold
-hi Error         	guifg=#FF0009 	guibg=#D6D6D6		gui=bold 			ctermfg=160		ctermbg=228 cterm=none
+hi Error         	guifg=#FF0009 	 gui=bold 			ctermfg=160		ctermbg=none cterm=bold
+" hi Warning          guifg=#FFFF5F 	guibg=none          gui=bold 			ctermfg=227     ctermbg=none  cterm=bold
 hi Folded        	guifg=#666666 	guibg=#DEDEDE 		gui=none 			ctermfg=242 	ctermbg=254
 hi FoldColumn    	guifg=#B2B2B2 	guibg=#D6D6D6 		gui=none 			ctermfg=249 	ctermbg=none 	cterm=none
-hi ColorColumn 						guibg=#FBFBFB 		gui=none 			ctermfg=none	ctermbg=254
+hi ColorColumn 						guibg=#D9D9D9 		gui=none 			ctermfg=none	ctermbg=253
 hi MatchParen 						guibg=#F9A658 		gui=none 							ctermbg=208
 hi Search 							guibg=#FAFF56 		gui=none 			ctermfg=none 	ctermbg=227
 hi IncSearch 						guibg=#F6B645 		gui=bold 			ctermfg=none 	ctermbg=215
 hi Comment 			guifg=#8C8C8C 	                                        ctermfg=245
 hi Todo 			guifg=#FFFFFF 	guibg=#D6D6D6           		gui=bold 			ctermfg=255 	  ctermbg=none       	cterm=bold
 hi Operator 		guifg=#375CF5											ctermfg=26
-hi Identifier 		guifg=Black 											ctermfg=232 	ctermbg=none
+hi Identifier 		guifg=Black 											ctermfg=232 	ctermbg=none  cterm=bold
 " hi Statement 		guifg=#FF5400 						gui=bold 			ctermfg=202 					cterm=bold
 "hi Statement 		guifg=#CA3A3A                       gui=bold            ctermfg=124                 cterm=bold
 hi Statement 		guifg=#141688                       gui=bold            ctermfg=18                 cterm=bold
@@ -77,7 +78,7 @@ hi Conditional 		guifg=#006633 						gui=bold			ctermfg=22 						cterm=bold
 
 hi Delimiter 		guifg=Black 											ctermfg=232
 hi PreProc 			guifg=#006633 											ctermfg=22
-hi Special guifg=#C71F1F guifg=bold ctermfg=88 cterm=bold
+hi Special          guifg=#C71F1F                       gui=bold            ctermfg=88                      cterm=bold
 hi Keyword 			guifg=#375CF5 											ctermfg=26
 hi SpellBad 		                                                        ctermfg=15      ctermbg=160
 hi SpellCap 						guibg=#375CF5										 	ctermbg=63
@@ -92,8 +93,10 @@ hi PmenuThumb 		guifg=#FBFBFB 	guibg=#FFFFFF 		gui=bold 			ctermfg=253		ctermbg=
 hi SignColumn 	 					guibg=#D6D6D6 		gui=none			ctermfg=none 	ctermbg=none
 
 " Synatastic
-hi SyntasticErrorLine 				 										ctermfg=160     ctermbg=228
-hi SyntasticWarning                                                         ctermfg=226
+hi SyntasticError      				 										ctermfg=255     ctermbg=124
+hi SyntasticErrorLine 				 										ctermfg=255     ctermbg=167
+hi SyntasticWarning                                                         ctermfg=52     ctermbg=227
+hi SyntasticWarningLine                                                     ctermfg=232     ctermbg=229
 
 " Diff
 hi DiffAdd         	guibg=#DAFFD3 						gui=none 			ctermfg=none 	ctermbg=121
@@ -124,7 +127,10 @@ hi rustOperator         guifg=#8A8A8A ctermfg=245
 hi Lifetime             guifg=#FF5500 ctermfg=196
 hi CommentDoc           guifg=#2A8EB8 ctermfg=24
 hi link rustConditional Statement
-hi link rustKeyword     Statement
+hi link rustIdentifier Identifier
+" hi rustKeyword          guifg=#F61616 gui=bold ctermfg=124 cterm=none
+hi link rustKeyword     Keyword
+hi link rustModPath     Statement
 hi link rustMacro       Function
 hi link rustAssert      Function
 hi link rustTrait       Type
