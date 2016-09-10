@@ -6,7 +6,7 @@
 set fillchars+=vert:\ 
 
 " Some of the colors used below:
-" Background = 		'#D6D6D6' 		" Terminal: none
+" Background = 		'#F1F1F1' 		" Terminal: none
 " Black = 			'#222222' 		" Terminal: 232
 " Red = 			'#FF0009'       " Terminal: 160
 " Orange = 			'#FF5400' 		" Terminal: 202
@@ -17,7 +17,7 @@ set fillchars+=vert:\
 " Pink = 			'#FF00C1' 		" Terminal: 199
 " LightBlue = 		'#D0E7FF' 		" Terminal: 153
 " LightYellow = 	'#FDFD74' 		" Terminal: 229
-" LightGrey = 		'#FBFBFB' 		" Terminal: 253
+" LightGrey = 		'#FBFBFB' 		" Terminal: 255
 
 " DarkGrey = 		'#666666' 		" Terminal: 245
 " DarkGreen = 		'#006633' 		" Terminal: 22
@@ -37,35 +37,33 @@ set background=light
 let colors_name = "vizuki2"
 
 
-hi Normal 			guifg=Black 	guibg=#D6D6D6 		gui=none 			ctermfg=232		ctermbg=252
-hi Function         guifg=#000000 gui=bold            ctermfg=232 cterm=bold
-hi Title         	guifg=#FF5400 	guibg=#D6D6D6 		gui=none 			ctermfg=202 	ctermbg=none
+hi Normal 			guifg=Black 	guibg=#F1F1F1 		gui=none 			ctermfg=232		ctermbg=255
+hi Function         guifg=#000000   gui=bold            ctermfg=232 cterm=bold
+hi Title         	guifg=#FF5400 	guibg=#F1F1F1       gui=none 			ctermfg=202 	ctermbg=none
 hi Cursor        	guifg=#FFFFFF 	guibg=#A640E2       gui=none 	ctermfg=92 ctermbg=255	                term=reverse
-" hi CursorLine 						guibg=#EAEAEA 		gui=none 			ctermbg=none 	ctermbg=254 	cterm=none
-"hi CursorLine 						                    gui=none 			                                cterm=none
-hi CursorLine 		guibg=#DEDEDE				                    gui=none 			    ctermbg=253  cterm=none
+hi CursorLine 		guibg=#EAEAEA				                    gui=none 			    ctermbg=254  cterm=none
 hi LineNr        	guifg=#BEBCBC 	ctermfg=249
 hi CursorLineNr    	guifg=#A5A5A5 	ctermfg=249 					cterm=bold
 hi Visual 							guibg=#B1CAE3 		gui=none 			ctermfg=none	ctermbg=153
-hi NonText 			guifg=#FBFBFB 	guibg=#D6D6D6 	 	gui=none 			ctermfg=253
-"hi StatusLine 		guifg=Black 	guibg=#D6D6D6 		gui=none 			ctermfg=232
+hi NonText 			guifg=#FBFBFB 	guibg=#F1F1F1       gui=none 			ctermfg=255
+"hi StatusLine 		guifg=Black 	guibg=#F1F1F1 		gui=none 			ctermfg=232
 hi StatusLine 		guibg=#8E8E8E guifg=#EFEFEF ctermbg=241 ctermfg=255
-hi StatusLineNC 	guifg=#666666 	guibg=#D6D6D6 		gui=none 			ctermfg=245
+hi StatusLineNC 	guifg=#666666 	guibg=#F1F1F1 		gui=none 			ctermfg=245
 
 hi VertSplit 		guifg=#A0A0A0 	guibg=#C7C7C7		gui=none 			ctermfg=251     ctermbg=242
-hi ModeMsg 			guifg=#FBFBFB 	guibg=#FF5400 		gui=none 			ctermfg=253 	ctermbg=202
+hi ModeMsg 			guifg=#FBFBFB 	guibg=#FF5400 		gui=none 			ctermfg=255 	ctermbg=202
 hi ErrorMsg 		guifg=#FFFFFF 	guibg=#FF0009 		gui=bold 			ctermfg=255 	ctermbg=160
-"hi Error         	guifg=#FF0009 	guibg=#D6D6D6		gui=bold 			ctermfg=160		ctermbg=none	cterm=bold
+"hi Error         	guifg=#FF0009 	guibg=#F1F1F1		gui=bold 			ctermfg=160		ctermbg=none	cterm=bold
 hi Error         	guifg=#FF0009 	 gui=bold 			ctermfg=160		ctermbg=none cterm=bold
 " hi Warning          guifg=#FFFF5F 	guibg=none          gui=bold 			ctermfg=227     ctermbg=none  cterm=bold
 hi Folded        	guifg=#666666 	guibg=#DEDEDE 		gui=none 			ctermfg=242 	ctermbg=254
-hi FoldColumn    	guifg=#B2B2B2 	guibg=#D6D6D6 		gui=none 			ctermfg=249 	ctermbg=none 	cterm=none
-hi ColorColumn 						guibg=#D9D9D9 		gui=none 			ctermfg=none	ctermbg=253
+hi FoldColumn    	guifg=#B2B2B2 	guibg=#F1F1F1 		gui=none 			ctermfg=249 	ctermbg=none 	cterm=none
+hi ColorColumn 						guibg=#D9D9D9 		gui=none 			ctermfg=none	ctermbg=255
 hi MatchParen 						guibg=#F9A658 		gui=none 							ctermbg=208
 hi Search 							guibg=#FAFF56 		gui=none 			ctermfg=none 	ctermbg=227
 hi IncSearch 						guibg=#F6B645 		gui=bold 			ctermfg=none 	ctermbg=215
 hi Comment 			guifg=#8C8C8C 	                                        ctermfg=245
-hi Todo 			guifg=#FFFFFF 	guibg=#D6D6D6           		gui=bold 			ctermfg=255 	  ctermbg=none       	cterm=bold
+hi Todo 			guifg=#FFFFFF 	guibg=#F1F1F1           		gui=bold 			ctermfg=255 	  ctermbg=none       	cterm=bold
 hi Operator 		guifg=#375CF5											ctermfg=26
 hi Identifier 		guifg=Black 											ctermfg=232 	ctermbg=none  cterm=bold
 " hi Statement 		guifg=#FF5400 						gui=bold 			ctermfg=202 					cterm=bold
@@ -84,13 +82,13 @@ hi SpellBad 		                                                        ctermfg=15
 hi SpellCap 						guibg=#375CF5										 	ctermbg=63
 
 " Prompt menu
-hi Pmenu 			guifg=#FBFBFB 	guibg=#666666 		gui=none 			ctermfg=253		ctermbg=241
+hi Pmenu 			guifg=#FBFBFB 	guibg=#666666 		gui=none 			ctermfg=255		ctermbg=241
 hi PmenuSel 		guifg=#FFFFFF 	guibg=#9212D6 		gui=bold 			ctermfg=255 	ctermbg=92 		cterm=bold
 hi PmenuSbar 		guifg=#8C8C8C 	guibg=#FFFFFF 		gui=bold 			ctermfg=249		ctermbg=200
-hi PmenuThumb 		guifg=#FBFBFB 	guibg=#FFFFFF 		gui=bold 			ctermfg=253		ctermbg=200
+hi PmenuThumb 		guifg=#FBFBFB 	guibg=#FFFFFF 		gui=bold 			ctermfg=255		ctermbg=200
 
 " GitGutter
-hi SignColumn 	 					guibg=#D6D6D6 		gui=none			ctermfg=none 	ctermbg=none
+hi SignColumn 	 					guibg=#F1F1F1 		gui=none			ctermfg=none 	ctermbg=none
 
 " Synatastic
 hi SyntasticError      				 										ctermfg=255     ctermbg=124
@@ -117,8 +115,9 @@ hi EasyMotionTarget2First 	guifg=#FF0087 									ctermfg=198 					ctermbg=none
 hi EasyMotionTarget2Second 	guifg=#DF0000 									ctermfg=160 					ctermbg=none 
 
 " Tab line
-hi TabLineFill 		guifg=#222222 	guibg=#222222 							ctermfg=232						ctermbg=none
-hi TabLine 			guifg=#666666 	guibg=#222222 		gui=none 			ctermfg=245
+hi TabLineFill 		guifg=#A0A0A0 	                                        ctermfg=247
+hi TabLine 			guifg=#FFFFFF 	guibg=#BCBCBC 		gui=none 			ctermfg=231     ctermbg=250 cterm=none
+hi TabLineSel 		guifg=#191919 	guibg=#DADADA       gui=bold            ctermfg=233     ctermbg=253 cterm=bold
 
 hi rustDeriveTrait      guifg=#B01E1E ctermfg=88
 hi rustDerive           guifg=#F61616 ctermfg=124
