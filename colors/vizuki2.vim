@@ -60,7 +60,7 @@ hi Folded        	guifg=#666666 	guibg=#DEDEDE 		gui=none 			ctermfg=242 	ctermb
 hi FoldColumn    	guifg=#B2B2B2 	guibg=#F1F1F1 		gui=none 			ctermfg=249 	ctermbg=none 	cterm=none
 hi ColorColumn 						guibg=#D9D9D9 		gui=none 			ctermfg=none	ctermbg=255
 hi MatchParen 						guibg=#F9A658 		gui=none 							ctermbg=208
-hi Search 							guibg=#FAFF56 		gui=none 			ctermfg=none 	ctermbg=227
+hi Search 							guibg=#FAFF56 		gui=none 			ctermfg=Black     ctermbg=227
 hi IncSearch 						guibg=#F6B645 		gui=bold 			ctermfg=none 	ctermbg=215
 hi Comment 			guifg=#8C8C8C 	                                        ctermfg=245
 hi Todo 			guifg=#FFFFFF 	guibg=#F1F1F1           		gui=bold 			ctermfg=255 	  ctermbg=none       	cterm=bold
