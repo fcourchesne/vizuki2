@@ -96,6 +96,15 @@ hi SyntasticErrorLine 				 										ctermfg=255     ctermbg=167
 hi SyntasticWarning                                                         ctermfg=52     ctermbg=227
 hi SyntasticWarningLine                                                     ctermfg=232     ctermbg=229
 
+hi ALEError                                                                 ctermfg=231     ctermbg=160
+hi ALEErrorLine                                                             ctermfg=253     ctermbg=88
+hi ALEWarning                                                               ctermfg=232     ctermbg=228
+hi ALEWarningLine                                                           ctermfg=249     ctermbg=230
+hi ALEInfo                                                                  ctermfg=164     ctermbg=87
+hi ALEInfoLine                                                              ctermfg=164     ctermbg=159
+hi ALEStyleError                                                            ctermfg=164     ctermbg=208
+hi ALEStyleWarning                                                          ctermfg=164     ctermbg=225
+
 " Diff
 hi DiffAdd         	guibg=#DAFFD3 						gui=none 			ctermfg=none 	ctermbg=121
 hi DiffChange 		guibg=#D3EEFF 						gui=none 			ctermfg=none 	ctermbg=117
